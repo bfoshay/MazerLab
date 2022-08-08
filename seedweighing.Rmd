@@ -30,7 +30,7 @@ view(ACdata)
 summary(lm(seedDOY ~ meanseedweight, ACdata))
 mod1 <- lm(seedDOY ~ meanseedweight, data=ACdata)
 
-ggplot(ACdata, aes(x=seedDOY, y=meanseedweight)) + geom_point() + geom_smooth(method="lm") + theme_classic()
+ggplot(ACdata, aes(x=seedDOY, y=meanseedweight)) + geom_point()  + theme_classic() + xlab("Seed Collection Date") + ylab("Mean Seed Weight")
 
 ```
 
